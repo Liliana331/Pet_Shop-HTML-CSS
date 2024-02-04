@@ -1,13 +1,402 @@
 /* mobile-first design is established */
 
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-container {
+    display: flex;
+    width: 414px;
+    height: 54px;
+    background: #F0A83E;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.languages,
+.top-menu {
+    display: none;
+}
+
+.top-logo {
+    display: flex;
+    width: 132.03px;
+    Height: 19px;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 1.5em;
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    width: 414px;
+}
+
+.slide p {
+    position: absolute;
+    top: 214px;
+    left: 63px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: white;
+    color: #3C2313;
+}
+
+.slide h3 {
+    position: absolute;
+    width: 190px;
+    height: 15px;
+    top: 273px;
+    left: 196px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #3C2313;
+}
+
+.slide button {
+    position: absolute;
+    width: 141px;
+    height: 49px;
+    top: 300px;
+    left: 229px;
+    border: none;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    background: #F0A83E;
+}
+
+.featured-products {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 414px;
+}
+
+.fa-paw {
+    color: #F0A83E;
+    font-size: 4em;
+    padding: 0.3em 0;
+}
+
+.featured-products h2 {
+    width: 212.89px;
+    height: 93.95px;
+    top: 609.95px;
+    left: 111.08px;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #3C2313;
+}
+
+.nav-products,
+ul,
+li {
+    display: flex;
+    padding: 0.5em 1em;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #666666;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 239px;
+    height: 283px;
+    align-items: center;
+}
+
+.description-card {
+    position: absolute;
+    bottom: 70px;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3C2313;
+}
+
+.price-card {
+    position: absolute;
+    bottom: 50px;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F0A83E;
+    width: 30.13px;
+    height: 15.25px;
+
+}
+
+.price-card::before {
+    content: "$";
+}
+
+form {
+    width: 404px;
+    height: 286px;
+    top: 1741px;
+    left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form>h2 {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #3C2313;
+    margin-bottom: 15px;
+}
+
+form>input {
+    width: 298px;
+    height: 40px;
+    top: 1804px;
+    left: 59px;
+    border: none;
+    border-radius: 15px;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #AB9C9C;
+    background: #3C2313;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.form-button {
+    display: flex;
+    margin: 30px 0;
+}
+
+.form-button>button {
+    width: 199px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    margin: 2px;
+}
+
+.btn-reset {
+    background: #8A8787;
+    left: 5px;
+}
+
+.btn-submit {
+    background: #F0A83E;
+    Left: 210px;
+}
+
+.subscription {
+    width: 414px;
+    height: 101px;
+    background: #F0A83E;
+    padding: 0 20px;
+}
+
+.send-mail {
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 2px;
+    gap: 3px;
+}
+
+.email-subscribe {
+    width: 261px;
+    height: 40px;
+    top: 2123px;
+    left: 15px;
+    border: none;
+    border-radius: 15px;
+    background: #FFFFFF;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A0A0A0;
+    padding: 5px;
+}
+
+.btn-subscribe {
+    width: 100px;
+    height: 35px;
+    top: 2126px;
+    left: 285px;
+    border: none;
+    border-radius: 15px;
+    background: #3C2313;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 414px;
+    top: 2165px;
+    background: #3C2313;
+}
+
+.bottom-logo {
+    margin-top: 15px;
+}
+
+.contact-options {
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 15px;
+}
+
+.option-footer {
+    position: relative;
+    width: 179px;
+    height: 66px;
+}
+
+.option-footer>.fa-solid {
+    display: flex;
+    background: radial-gradient(#666666, #A0A0A0, #FFFFFF);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid #666666 3px;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    position: absolute;
+    top: 10px;
+    left: 5em;
+    text-align: center;
+}
+
+.description>h3 {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: white;
+}
+
+.description>h5 {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8A8787;
+}
+
+footer>p {
+    width: 414px;
+    height: 18.84px;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width:415px) {
+
+    .top-menu {
+        /* padding: 20px; */
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    .top-options {
+        display: flex;
+        width: 343px;
+        height: 15px;
+        top: 43px;
+        left: 641px;
+        /* justify-content: space-around; */
 
 
+    }
 
+    .top-options li a {
+        text-decoration: none;
+        color: white;
+        display: none;
+    }
 
+    .top-options li a {
+        display: flex;
+    }
 
+    .top-options li::before {
+        content: "🐾";
+    }
 
-
-
-
-
-
+    .fa-solid .fa-bars {
+        display: none;
+    }
+}

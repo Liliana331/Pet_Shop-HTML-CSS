@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-/6ov5ZxuEc59eLvevf+Zex5CtS2WqQkw4Oos3SYzYZc9SRig97a/Hp6+uGcLaDy+Upo4+gcIfMeDV+XwQWZnCg==" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
     <title>Petshop</title>
 </head>
+
 <body>
     <header>
         <div class="menu-container">
@@ -16,34 +24,31 @@
                 <img src="images/top_logo/Cat&Dog.png" alt="image with the word cat and dog">
                 <img src="images/top_logo/Dog.png" alt="dog image">
             </div>
-            <nav>
-                <ul>
+            <nav class="top-menu">
+                <ul class="top-options">
                     <li><a href="#categories">Categories</a></li>
                     <li><a href="#pets">Pets</a></li>
                     <li><a href="#about-us">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <i class="menu-bar"></i>
             </nav>
+
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
     <main>
         <div class="slide">
-
             <img src="images/bowl-background.png" alt="pet feeder image">
 
-            <p>!It is a pleasure having you in here¡</p>
+            <p class="greeting">!It is a pleasure having you in here¡</p>
 
-            <p>discount feeders</p>
+            <h3>discount feeders</h3>
 
             <button type="button" value="feeders">Feeders</button>
-            <!-- <div class="background-image">
-                
-            </div> -->
         </div>
 
         <div class="featured-products">
-            <i></i>
+            <i class="fa-solid fa-paw"></i>
 
             <h2>Featured Products</h2>
 
@@ -57,22 +62,22 @@
 
             <div class="cards">
 
-                <div class="toy-card">
+                <div class="item-card">
                     <img src="images/churrasquito.png" alt="dog toy image">
-                    <p class="description-card"></p>
-                    <p class="price-card"></p>
+                    <p class="description-card">churrasquito toy</p>
+                    <p class="price-card">150</p>
                 </div>
 
-                <div class="feeder-card">
+                <div class="item-card">
                     <img src="images/comedero.png" alt="feeder image">
-                    <p class="description-card"></p>
-                    <p class="price-card"></p>
+                    <p class="description-card">dog feeder</p>
+                    <p class="price-card">250</p>
                 </div>
 
-                <div class="bone-card">
+                <div class="item-card">
                     <img src="images/Huesito.png" alt="little bone image">
-                    <p class="description-card"></p>
-                    <p class="price-card"></p>
+                    <p class="description-card">bone toy</p>
+                    <p class="price-card">650</p>
                 </div>
             </div>
         </div>
@@ -83,44 +88,56 @@
             <input type="email" name="" id="" value="" placeholder="Enter your Email">
             <input type="tel" name="" id="" value="" placeholder="Entern your Phone Number">
             <div class="form-button">
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
+                <button type="reset" class="btn-reset">Reset</button>
+                <button type="submit" class="btn-submit">Submit</button>
+
             </div>
         </form>
 
         <div class="subscription">
-            <i></i>
-            <h3>subscribe for more news</h3>
+            <div class="send-mail">
+                <img src="images/send_mail.png" alt="send mail image">
+                <!-- <i class="fa-regular fa-envelope"></i> -->
+                <h3>subscribe for more news</h3>
+            </div>
             <div class="subscription-button">
-                <input type="email" name="" id="" value="">
-                <input type="button" value="subscribe">
+                <input class="email-subscribe" type="email" name="" id="" value="" placeholder="Enter your email">
+                <input class="btn-subscribe" type="button" value="subscribe">
             </div>
         </div>
     </main>
+
     <footer>
         <div class="bottom-logo">
             <img src="images/bottom_logo.png" alt="store logo">
         </div>
         <div class="contact-options">
             <div class="option-footer">
-                <i></i>
-                <h3></h3>
-                <h5></h5>
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="description">
+                    <h3>location</h3>
+                    <h5>Street - province</h5>
+                </div>
             </div>
 
             <div class="option-footer">
-                <i></i>
-                <h3></h3>
-                <h5></h5>
+                <i class="fa-solid fa-phone-volume"></i>
+                <div class="description">
+                    <h3>phone</h3>
+                    <h5>phone number</h5>
+                </div>
             </div>
 
             <div class="option-footer">
-                <i></i>
-                <h3></h3>
-                <h5></h5>
+                <i class="fa-solid fa-envelope"></i>
+                <div class="description">
+                    <h3>email</h3>
+                    <h5>Mail address</h5>
+                </div>
             </div>
         </div>
-        <p>All rights reserved</p>
+        <p>All rights reserved Front End</p>
     </footer>
 </body>
+
 </html>
